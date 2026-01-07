@@ -1,0 +1,51 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    
+    // Register afterEvaluate BEFORE evaluationDependsOn
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            project.android {
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_17
+                    targetCompatibility JavaVersion.VERSION_17
+                }
+            }
+        }
+        project.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+            kotlinOptions {
+                jvmTarget = "17"
+            }
+        }
+    }
+    
+    configurations.configureEach {
+        resolutionStrategy {
+            force 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+            force 'com.braintreepayments.api:data-collector:4.31.0'
+            force 'androidx.browser:browser:1.8.0'
+            force 'androidx.activity:activity-compose:1.9.3'
+            force 'androidx.core:core-ktx:1.15.0'
+            force 'androidx.core:core:1.15.0'
+            force 'androidx.activity:activity-ktx:1.9.3'
+            force 'androidx.activity:activity:1.9.3'
+        }
+        exclude group: 'com.paypal.android.sdk', module: 'data-collector'
+    }
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
