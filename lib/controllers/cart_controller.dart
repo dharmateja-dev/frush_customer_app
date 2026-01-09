@@ -297,6 +297,14 @@ class CartController extends GetxController {
   List<CartProductModel> tempProduc = [];
 
   placeOrder() async {
+    // Check if restaurant is currently open before placing order
+    if (!Constant.isVendorOpen(vendorModel.value)) {
+      ShowToastDialog.showToast(
+          "Restaurant is currently closed. You cannot place an order at this time."
+              .tr);
+      return;
+    }
+
     if (selectedPaymentMethod.value == PaymentGateway.wallet.name) {
       if (double.parse(userModel.value.walletAmount.toString()) >=
           totalAmount.value) {

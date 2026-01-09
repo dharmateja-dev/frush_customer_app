@@ -178,7 +178,7 @@ const Map<String, String> lnEs = {
   "Book Now": "Reservar ahora",
   "Ratings": "Calificaciones",
   "Open": "Abierto",
-  "Close": "Cerrado",
+  "Closed": "Cerrado",
   "View Timings": "Ver horarios",
   "for two": "para dos",
   "Also applicable on food delivery": "También aplicable en entrega de comida",
@@ -298,6 +298,8 @@ const Map<String, String> lnEs = {
   "TakeAway": "Para llevar",
   "Schedule": "Programar",
   "Reorder": "Reordenar",
+  "Restaurant is currently closed. You cannot place an order at this time.":
+      "El restaurante está cerrado actualmente. No puedes realizar un pedido en este momento.",
   "My Order": "Mi pedido",
   "Keep track your delivered, In Progress and Rejected food all in just one place.":
       "Lleva el registro de tus pedidos entregados, en progreso y rechazados en un solo lugar.",

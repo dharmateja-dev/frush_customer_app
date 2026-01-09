@@ -2055,6 +2055,14 @@ class OrderDetailsScreen extends StatelessWidget {
                               color: AppThemeData.primary300,
                               textColor: AppThemeData.grey50,
                               onPress: () async {
+                                // Check if restaurant is currently open
+                                if (!Constant.isVendorOpen(
+                                    controller.orderModel.value.vendor)) {
+                                  ShowToastDialog.showToast(
+                                      "Restaurant is currently closed. You cannot place an order at this time."
+                                          .tr);
+                                  return;
+                                }
                                 for (var element
                                     in controller.orderModel.value.products!) {
                                   controller.addToCart(
@@ -2089,4 +2097,3 @@ class OrderDetailsScreen extends StatelessWidget {
 * Company: Movenetics Digital
 * Author: Aman Bhandari 
 *******************************************************************************************/
-

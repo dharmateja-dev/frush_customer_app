@@ -407,6 +407,38 @@ class Constant {
         .inDays;
   }
 
+  /// Check if a vendor/restaurant is currently open based on their working hours
+  static bool isVendorOpen(VendorModel? vendorModel) {
+    if (vendorModel == null || vendorModel.workingHours == null) {
+      return false;
+    }
+
+    final now = DateTime.now();
+    var day = DateFormat('EEEE', 'en_US').format(now);
+    var date = DateFormat('dd-MM-yyyy').format(now);
+
+    for (var element in vendorModel.workingHours!) {
+      if (day == element.day.toString()) {
+        if (element.timeslot != null && element.timeslot!.isNotEmpty) {
+          for (var timeslot in element.timeslot!) {
+            try {
+              var start = DateFormat("dd-MM-yyyy HH:mm")
+                  .parse("$date ${timeslot.from}");
+              var end =
+                  DateFormat("dd-MM-yyyy HH:mm").parse("$date ${timeslot.to}");
+              if (now.isAfter(start) && now.isBefore(end)) {
+                return true;
+              }
+            } catch (e) {
+              // Handle parsing errors silently
+            }
+          }
+        }
+      }
+    }
+    return false;
+  }
+
   static String timestampToDate(Timestamp timestamp) {
     DateTime dateTime = timestamp.toDate();
     return DateFormat('MMM dd,yyyy').format(dateTime);

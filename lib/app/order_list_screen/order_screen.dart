@@ -498,6 +498,13 @@ class OrderScreen extends StatelessWidget {
                       ? Expanded(
                           child: InkWell(
                             onTap: () {
+                              // Check if restaurant is currently open
+                              if (!Constant.isVendorOpen(orderModel.vendor)) {
+                                ShowToastDialog.showToast(
+                                    "Restaurant is currently closed. You cannot place an order at this time."
+                                        .tr);
+                                return;
+                              }
                               for (var element in orderModel.products!) {
                                 controller.addToCart(cartProductModel: element);
                                 ShowToastDialog.showToast(
@@ -589,4 +596,3 @@ class OrderScreen extends StatelessWidget {
 * Company: Movenetics Digital
 * Author: Aman Bhandari 
 *******************************************************************************************/
-

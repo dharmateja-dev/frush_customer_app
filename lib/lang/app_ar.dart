@@ -19,11 +19,13 @@ const Map<String, String> lnAr = {
   "Nearby landmark": "معلم قريب",
   "Save Address Details": "حفظ تفاصيل العنوان",
   "Please select Location": "يرجى تحديد الموقع",
-  "Please Enter Flat / House / Flore / Building": "يرجى إدخال الشقة/المنزل/الطابق/المبنى",
+  "Please Enter Flat / House / Flore / Building":
+      "يرجى إدخال الشقة/المنزل/الطابق/المبنى",
   "Please Enter Area / Sector / locality": "يرجى إدخال المنطقة/القطاع/المنطقة",
   "Skip": "تخطي",
   "Welcome Back! 👋": "مرحبًا بك مرة أخرى! 👋",
-  "Log in to continue enjoying delicious food delivered to your doorstep.": "سجّل الدخول لمواصلة الاستمتاع بالطعام اللذيذ الذي يتم توصيله إلى باب منزلك.",
+  "Log in to continue enjoying delicious food delivered to your doorstep.":
+      "سجّل الدخول لمواصلة الاستمتاع بالطعام اللذيذ الذي يتم توصيله إلى باب منزلك.",
   "Email Address": "عنوان البريد الإلكتروني",
   "Enter email address": "أدخل عنوان البريد الإلكتروني",
   "Password": "كلمة المرور",
@@ -37,7 +39,8 @@ const Map<String, String> lnAr = {
   "Didn’t have an account": "لم يكن لديك حساب",
   "Sign up": "تسجيل الدخول",
   "Verify Your Number 📱": "التحقق من رقمك 📱",
-  "Enter the OTP sent to your mobile number.": "أدخل رمز OTP المرسل إلى رقم هاتفك المحمول.",
+  "Enter the OTP sent to your mobile number.":
+      "أدخل رمز OTP المرسل إلى رقم هاتفك المحمول.",
   "Verify & Next": "التحقق والمتابعة",
   "Verify otp": "التحقق من كلمة المرور المؤقتة",
   "Invalid Code": "الرمز غير صالح",
@@ -49,7 +52,8 @@ const Map<String, String> lnAr = {
   "Send OTP": "أرسل كلمة مرور لمرة واحدة",
   "Continue with Email": "استمر بالبريد الإلكتروني",
   "Create an Account 🚀": "أنشئ حسابًا 🚀",
-  "Sign up to start your food adventure with Foodie": "سجّل لبدء مغامرة طعامك مع Foodie",
+  "Sign up to start your food adventure with Foodie":
+      "سجّل لبدء مغامرة طعامك مع Foodie",
   "First Name": "الاسم الأول",
   "Enter First Name": "أدخل الاسم الأول",
   "Last Name": "الاسم الأخير",
@@ -60,8 +64,10 @@ const Map<String, String> lnAr = {
   "Signup": "التسجيل",
   "Please enter first name": "يرجى إدخال الاسم الأول",
   "Please enter last name": "يرجى إدخال الاسم الأخير",
-  "Password and Confirm password doesn't match": "كلمة المرور وتأكيد كلمة المرور لا تتطابقان",
-  "Please enter minimum 6 characters password": "الرجاء إدخال كلمة المرور المكونة من 6 أحرف على الأقل",
+  "Password and Confirm password doesn't match":
+      "كلمة المرور وتأكيد كلمة المرور لا تتطابقان",
+  "Please enter minimum 6 characters password":
+      "الرجاء إدخال كلمة المرور المكونة من 6 أحرف على الأقل",
   "Please enter password": "يرجى إدخال كلمة المرور",
   "Please enter Confirm password": "يرجى إدخال تأكيد كلمة المرور",
   "Item Not available": "المنتج غير متوفر",
@@ -101,18 +107,22 @@ const Map<String, String> lnAr = {
   "Fix Price": "تثبيت السعر",
   "Tap To Apply": "انقر للتقديم",
   "Order Placed": "تم تقديم الطلب",
-  "Your delicious meal is on its way! Sit tight and we’ll handle the rest.": "وجبتك اللذيذة في طريقها إليك! اجلس وسنتولى الباقي.",
+  "Your delicious meal is on its way! Sit tight and we’ll handle the rest.":
+      "وجبتك اللذيذة في طريقها إليك! اجلس وسنتولى الباقي.",
   "Order ID": "",
   "Placing your order": "معرف الطلب",
-  "Review your items and proceed to checkout for a delicious experience.": "تقديم طلبك",
-  "Delivery Address": "راجع العناصر الخاصة بك وانتقل إلى الدفع للحصول على تجربة لذيذة.",
+  "Review your items and proceed to checkout for a delicious experience.":
+      "تقديم طلبك",
+  "Delivery Address":
+      "راجع العناصر الخاصة بك وانتقل إلى الدفع للحصول على تجربة لذيذة.",
   "Order Summary": "",
   "Track Order": "عنوان التسليم",
   "Payment Option": "ملخص الطلب",
   "Preferred Payment": "تتبع الطلب",
   "Other Payment Options": "خيار الدفع",
   "Change Language": "طريقة الدفع المفضلة",
-  "Select your preferred language for a personalized app experience.": "خيارات الدفع الأخرى",
+  "Select your preferred language for a personalized app experience.":
+      "خيارات الدفع الأخرى",
   "Type message here....": "تغيير اللغة",
   "text": "حدد لغتك المفضلة للحصول على تجربة تطبيق مخصصة.",
   "Send Media": "اكتب الرسالة هنا....",
@@ -166,7 +176,7 @@ const Map<String, String> lnAr = {
   "Book Now": "الطلبات الإضافية",
   "Ratings": "أضف رسالة هنا....",
   "Open": "احجز الآن",
-  "Close": "التقييمات",
+  "Closed": "التقييمات",
   "View Timings": "افتح",
   "for two": "أغلق",
   "Also applicable on food delivery": "عرض التوقيتات",
@@ -182,25 +192,32 @@ const Map<String, String> lnAr = {
   "Cost for Two": "الموقع والتوقيت والتكاليف",
   "Cuisines": "عرض على الخريطة",
   "Dine-In Reservations": "التوقيت",
-  "Book a table at your favorite restaurant and enjoy a delightful dining experience.": "التكلفة لشخصين",
+  "Book a table at your favorite restaurant and enjoy a delightful dining experience.":
+      "التكلفة لشخصين",
   "No Restaurants Found in Your Area": "المأكولات",
-  "Currently, there are no available restaurants in your zone. Try changing your location to find nearby options.": "حجوزات تناول الطعام",
+  "Currently, there are no available restaurants in your zone. Try changing your location to find nearby options.":
+      "حجوزات تناول الطعام",
   "New Arrivals": "احجز طاولة في مطعمك المفضل واستمتع بتجربة طعام ممتعة.",
   "View all": "لم يتم العثور على مطاعم في منطقتك",
-  "Popular Restaurants": "حاليًا، لا توجد مطاعم متاحة في منطقتك. حاول تغيير موقعك للعثور على خيارات قريبة.",
+  "Popular Restaurants":
+      "حاليًا، لا توجد مطاعم متاحة في منطقتك. حاول تغيير موقعك للعثور على خيارات قريبة.",
   "All Restaurants": "الوافدون الجدد",
-  "Sorry, The Zone is not available in your area. change the other location first.": "عرض الكل",
+  "Sorry, The Zone is not available in your area. change the other location first.":
+      "عرض الكل",
   "Could not launch": "المطاعم الشعبية",
   "Categories": "جميع المطاعم",
-  "Profile Information": "عذرًا، The Zone غير متاح في منطقتك. قم بتغيير الموقع الآخر أولاً.",
-  "View and update your personal details, contact information, and preferences.": "تعذر التشغيل",
+  "Profile Information":
+      "عذرًا، The Zone غير متاح في منطقتك. قم بتغيير الموقع الآخر أولاً.",
+  "View and update your personal details, contact information, and preferences.":
+      "تعذر التشغيل",
   "Save Details": "الفئات",
   "please select": "معلومات الملف الشخصي",
   "camera": "عرض وتحديث تفاصيلك الشخصية ومعلومات الاتصال والتفضيلات.",
   "gallery": "احفظ التفاصيل",
   "Your Favourites, All in One Place": "يرجى تحديد",
   "Please Log In to Continue": "يرجى تسجيل الدخول للمتابعة",
-  "You’re not logged in. Please sign in to access your account and explore all features.": "لم تقم بتسجيل الدخول. يرجى تسجيل الدخول للوصول إلى حسابك واستكشاف جميع الميزات.",
+  "You’re not logged in. Please sign in to access your account and explore all features.":
+      "لم تقم بتسجيل الدخول. يرجى تسجيل الدخول للوصول إلى حسابك واستكشاف جميع الميزات.",
   "Log in": "تسجيل الدخول",
   "Favourite Restaurants": "المطاعم المفضلة",
   "Favourite Foods": "الأطعمة المفضلة",
@@ -208,24 +225,28 @@ const Map<String, String> lnAr = {
   "Favourite Foods not found": "الأطعمة المفضلة غير موجودة",
   "Non Veg.": "غير نباتية.",
   "Pure veg.": "نباتية خالصة.",
-  "No worries!! We’ll send you reset instructions": "لا تقلق!! سنرسل لك تعليمات إعادة الضبط",
+  "No worries!! We’ll send you reset instructions":
+      "لا تقلق!! سنرسل لك تعليمات إعادة الضبط",
   "Customize Gift Card": "تخصيص بطاقة الهدية",
   "Choose an amount": "اختر مبلغًا",
   "Enter gift card amoun": "أدخل مبلغ بطاقة الهدية",
   "Add Message (Optional)": "أضف رسالة (اختياري)",
   "Continue": "متابعة",
   "Please enter Amount": "يرجى إدخال المبلغ",
-  "Complete payment and share this e-gift card with loved ones using any app": "أكمل الدفع وشارك بطاقة الهدية الإلكترونية هذه مع أحبائك باستخدام أي تطبيق",
+  "Complete payment and share this e-gift card with loved ones using any app":
+      "أكمل الدفع وشارك بطاقة الهدية الإلكترونية هذه مع أحبائك باستخدام أي تطبيق",
   "Sub Total": "المجموع الفرعي",
   "Grand Total": "المجموع الكلي",
-  "Gift Card expire days after purchase": "تنتهي صلاحية بطاقة الهدية بعد أيام من الشراء",
+  "Gift Card expire days after purchase":
+      "تنتهي صلاحية بطاقة الهدية بعد أيام من الشراء",
   "Purchased Gift card not found": "تم شراء بطاقة الهدية غير موجودة",
   "Gift Code": "رمز الهدية",
   "Gift Pin": "رقم التعريف الشخصي للهدية",
   "Redeemed": "تم الاسترداد",
   "Not Redeem": "لم يتم الاسترداد",
   "Redeem Gift Card": "استرداد بطاقة الهدية",
-  "Enter your gift card code to enjoy discounts and special offers on your orders.": "أدخل رمز بطاقة الهدية للاستمتاع بالخصومات والعروض الخاصة على طلباتك.",
+  "Enter your gift card code to enjoy discounts and special offers on your orders.":
+      "أدخل رمز بطاقة الهدية للاستمتاع بالخصومات والعروض الخاصة على طلباتك.",
   "Enter gift code": "أدخل رمز الهدية",
   "Enter gift pin": "أدخل رمز الهدية",
   "Please Enter Gift Code": "يرجى إدخال رمز الهدية",
@@ -236,9 +257,11 @@ const Map<String, String> lnAr = {
   "success": "نجاح",
   "Voucher redeem successfully": "تم استرداد القسيمة بنجاح",
   "Invalid Gift Code": "رمز الهدية غير صالح",
-  "Something went wrong, please contact admin.": "حدث خطأ ما، يرجى الاتصال بالمسؤول.",
+  "Something went wrong, please contact admin.":
+      "حدث خطأ ما، يرجى الاتصال بالمسؤول.",
   "No Restaurant found": "لم يتم العثور على مطعم",
-  "Search the dish, restaurant, food, meals": "ابحث عن الطبق والمطعم والطعام والوجبات",
+  "Search the dish, restaurant, food, meals":
+      "ابحث عن الطبق والمطعم والطعام والوجبات",
   "Our Categories": "فئاتنا",
   "See all": "مشاهدة الكل",
   "Best Servings Food": "أفضل الوجبات الطعام",
@@ -248,7 +271,8 @@ const Map<String, String> lnAr = {
   "Best Food Stories Ever": "أفضل قصص الطعام على الإطلاق",
   "Best Restaurants": "أفضل المطاعم",
   "Explore the Categories": "استكشف الفئات",
-  "Do you really want to change the delivery option? Your cart will be empty.": "هل تريد حقًا تغيير خيار التوصيل؟ ستكون عربة التسوق فارغة.",
+  "Do you really want to change the delivery option? Your cart will be empty.":
+      "هل تريد حقًا تغيير خيار التوصيل؟ ستكون عربة التسوق فارغة.",
   "Alert": "تنبيه",
   "Upto": "حتى",
   "Percentage": "النسبة المئوية",
@@ -256,7 +280,8 @@ const Map<String, String> lnAr = {
   "off": "خصم",
   "Error": "خطأ",
   "Enable Location Services 📍": "تمكين خدمات الموقع 📍",
-  "To provide the best dining experience, allow Foodie to access your location.": "لتوفير أفضل تجربة طعام، اسمح لـ Foodie بالوصول إلى موقعك.",
+  "To provide the best dining experience, allow Foodie to access your location.":
+      "لتوفير أفضل تجربة طعام، اسمح لـ Foodie بالوصول إلى موقعك.",
   "Use Current Location": "استخدم الموقع الحالي",
   "Set From Map": "استخدم الموقع الحالي",
   "Enter Manually location": "تعيين من الخريطة",
@@ -269,8 +294,11 @@ const Map<String, String> lnAr = {
   "TakeAway": "إصلاح",
   "Schedule": "الوجبات الجاهزة",
   "Reorder": "جدولة",
+  "Restaurant is currently closed. You cannot place an order at this time.":
+      "المطعم مغلق حالياً. لا يمكنك تقديم طلب في هذا الوقت.",
   "My Order": "طلبي",
-  "Keep track your delivered, In Progress and Rejected food all in just one place.": "تتبع طعامك الذي تم تسليمه، والطعام الجاري تسليمه، والطعام المرفوض، كل ذلك في مكان واحد.",
+  "Keep track your delivered, In Progress and Rejected food all in just one place.":
+      "تتبع طعامك الذي تم تسليمه، والطعام الجاري تسليمه، والطعام المرفوض، كل ذلك في مكان واحد.",
   "All": "الجميع",
   "In Progress": "في تَقَدم",
   "Delivered": "تم التوصيل",
@@ -278,18 +306,23 @@ const Map<String, String> lnAr = {
   "Order Not Found": "الطعام الذي تم توصيله",
   "View Details": "الطعام المرفوض",
   "My Profile": "لم يتم العثور على الطلب",
-  "Manage your personal information, preferences, and settings all in one place.": "عرض التفاصيل",
+  "Manage your personal information, preferences, and settings all in one place.":
+      "عرض التفاصيل",
   "General Information": "ملف التعريف الخاص بي",
-  "Bookings Information": "قم بإدارة معلوماتك الشخصية وتفضيلاتك وإعداداتك، كل ذلك في مكان واحد.",
+  "Bookings Information":
+      "قم بإدارة معلوماتك الشخصية وتفضيلاتك وإعداداتك، كل ذلك في مكان واحد.",
   "Preferences": "",
   "Social": "معلومات عامة",
   "Refer a Friend": "معلومات الحجز",
   "Rate the app": "التفضيلات",
   "Communication": "وسائل التواصل الاجتماعي",
-  "Are you sure you want to log out? You will need to enter your credentials to log back in.": "أحل صديقًا",
+  "Are you sure you want to log out? You will need to enter your credentials to log back in.":
+      "أحل صديقًا",
   "Delete Account": "قم بتقييم التطبيق",
-  "Are you sure you want to delete your account? This action is irreversible and will permanently remove all your data.": "التواصل",
-  "Account deleted successfully": "هل أنت متأكد من أنك تريد تسجيل الخروج؟ ستحتاج إلى إدخال بيانات الاعتماد الخاصة بك لتسجيل الدخول مرة أخرى.",
+  "Are you sure you want to delete your account? This action is irreversible and will permanently remove all your data.":
+      "التواصل",
+  "Account deleted successfully":
+      "هل أنت متأكد من أنك تريد تسجيل الخروج؟ ستحتاج إلى إدخال بيانات الاعتماد الخاصة بك لتسجيل الدخول مرة أخرى.",
   "Contact Administrator": "حذف الحساب",
   "Dark Mode": "الوضع المظلم",
   "Rate the food": "تم حذف الحساب بنجاح",
@@ -302,13 +335,18 @@ const Map<String, String> lnAr = {
   "Refer your friend and earn": "تصفح الصورة",
   "Each🎉": "اكتب تعليقًا",
   "Invite Friends & Businesses": "أرسل مراجعة",
-  "Invite your friends to sign up with Foodie using your code, and you’ll earn after their Success the first order! 💸🍔": "أحل صديقك واكسب",
+  "Invite your friends to sign up with Foodie using your code, and you’ll earn after their Success the first order! 💸🍔":
+      "أحل صديقك واكسب",
   "Share Code": "كل🎉",
-  "Hey there, thanks for choosing Foodie. Hope you love our product. If you do, share it with your friends using code": "ادعُ الأصدقاء والشركات",
-  "Timing is not added by restaurant": "ادعُ أصدقاءك للتسجيل في Foodie باستخدام الكود الخاص بك، وستربح بعد نجاحهم الطلب الأول! 💸🍔",
+  "Hey there, thanks for choosing Foodie. Hope you love our product. If you do, share it with your friends using code":
+      "ادعُ الأصدقاء والشركات",
+  "Timing is not added by restaurant":
+      "ادعُ أصدقاءك للتسجيل في Foodie باستخدام الكود الخاص بك، وستربح بعد نجاحهم الطلب الأول! 💸🍔",
   "Also applicable on table booking": "شارك الكود",
-  "Additional Offers": "مرحبًا، شكرًا لاختيارك Foodie. نأمل أن تحب منتجنا. إذا قمت بذلك، شاركه مع أصدقائك باستخدام الكود",
-  "Search the dish, food, meals and more...": "لا يتم إضافة التوقيت بواسطة المطعم",
+  "Additional Offers":
+      "مرحبًا، شكرًا لاختيارك Foodie. نأمل أن تحب منتجنا. إذا قمت بذلك، شاركه مع أصدقائك باستخدام الكود",
+  "Search the dish, food, meals and more...":
+      "لا يتم إضافة التوقيت بواسطة المطعم",
   "Veg": "ينطبق أيضًا على حجز الطاولة",
   "Info": "عروض إضافية",
   "Food Information's": "ابحث عن الطبق والطعام والوجبات والمزيد...",
@@ -333,7 +371,8 @@ const Map<String, String> lnAr = {
   "Select Top up Options": "شحن المحفظة",
   "Top-up": "المبلغ",
   "Please Enter minimum amount of": "أدخل المبلغ",
-  "Keep track of your balance, transactions, and payment methods all in one place.": "حدد خيارات الشحن",
+  "Keep track of your balance, transactions, and payment methods all in one place.":
+      "حدد خيارات الشحن",
   "Transaction not found": "شحن",
   "Foodie": "يرجى إدخال الحد الأدنى من",
   "Get Started": "تتبع رصيدك ومعاملاتك وطرق الدفع في مكان واحد.",
@@ -379,4 +418,3 @@ const Map<String, String> lnAr = {
 * Company: Movenetics Digital
 * Author: Aman Bhandari 
 *******************************************************************************************/
-

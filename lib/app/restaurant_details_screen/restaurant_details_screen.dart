@@ -472,7 +472,7 @@ class RestaurantDetailsScreen extends StatelessWidget {
                                       Text(
                                         controller.isOpen.value
                                             ? "Open".tr
-                                            : "Close".tr,
+                                            : "Closed".tr,
                                         textAlign: TextAlign.start,
                                         maxLines: 1,
                                         style: TextStyle(
