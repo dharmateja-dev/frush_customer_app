@@ -1,6 +1,7 @@
 import 'package:customer/app/chat_screens/chat_screen.dart';
 import 'package:customer/app/order_list_screen/live_tracking_screen.dart';
 import 'package:customer/app/rate_us_screen/rate_product_screen.dart';
+import 'package:customer/app/rate_us_screen/rate_driver_screen.dart';
 import 'package:customer/constant/constant.dart';
 import 'package:customer/constant/show_toast_dialog.dart';
 import 'package:customer/controllers/order_details_controller.dart';
@@ -1367,31 +1368,145 @@ class OrderDetailsScreen extends StatelessWidget {
                           const SizedBox(
                             height: 14,
                           ),
-                          // if (controller.orderModel.value.takeAway != true &&
-                          //     controller.orderModel.value.status ==
-                          //         Constant.orderCompleted)
-                          //   Column(
-                          //     crossAxisAlignment: CrossAxisAlignment.start,
-                          //     children: [
-                          //       Text(
-                          //         "Delivery Man".tr,
-                          //         textAlign: TextAlign.start,
-                          //         style: TextStyle(
-                          //           fontFamily: AppThemeData.semiBold,
-                          //           fontSize: 16,
-                          //           color: themeChange.getThem()
-                          //               ? AppThemeData.grey50
-                          //               : AppThemeData.grey900,
-                          //         ),
-                          //       ),
-                          //       const SizedBox(
-                          //         height: 10,
-                          //       ),
-                          //       const SizedBox(
-                          //         height: 14,
-                          //       ),
-                          //     ],
-                          //   ),
+                          if (controller.orderModel.value.takeAway != true &&
+                              controller.driverUserModel.value.id != null)
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Delivery Man".tr,
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                    fontFamily: AppThemeData.semiBold,
+                                    fontSize: 16,
+                                    color: themeChange.getThem()
+                                        ? AppThemeData.grey50
+                                        : AppThemeData.grey900,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    color: themeChange.getThem()
+                                        ? AppThemeData.grey900
+                                        : AppThemeData.grey50,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
+                                  padding: const EdgeInsets.all(12),
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      ClipOval(
+                                        child: NetworkImageWidget(
+                                          imageUrl: controller.driverUserModel
+                                              .value.profilePictureURL
+                                              .toString(),
+                                          height: 50,
+                                          width: 50,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 12),
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              controller.driverUserModel.value
+                                                  .fullName(),
+                                              style: TextStyle(
+                                                fontFamily: AppThemeData.medium,
+                                                fontSize: 16,
+                                                color: themeChange.getThem()
+                                                    ? AppThemeData.grey50
+                                                    : AppThemeData.grey900,
+                                              ),
+                                            ),
+                                            if (controller.driverUserModel.value
+                                                        .reviewsCount !=
+                                                    null &&
+                                                controller.driverUserModel.value
+                                                        .reviewsCount! >
+                                                    0)
+                                              Row(
+                                                children: [
+                                                  Icon(Icons.star,
+                                                      size: 16,
+                                                      color: AppThemeData
+                                                          .warning300),
+                                                  const SizedBox(width: 4),
+                                                  Text(
+                                                    (controller
+                                                                .driverUserModel
+                                                                .value
+                                                                .reviewsSum! /
+                                                            controller
+                                                                .driverUserModel
+                                                                .value
+                                                                .reviewsCount!)
+                                                        .toStringAsFixed(1),
+                                                    style: TextStyle(
+                                                      fontFamily:
+                                                          AppThemeData.medium,
+                                                      fontSize: 14,
+                                                      color: themeChange
+                                                              .getThem()
+                                                          ? AppThemeData.grey400
+                                                          : AppThemeData
+                                                              .grey600,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    " (${controller.driverUserModel.value.reviewsCount} reviews)",
+                                                    style: TextStyle(
+                                                      fontFamily:
+                                                          AppThemeData.regular,
+                                                      fontSize: 12,
+                                                      color: themeChange
+                                                              .getThem()
+                                                          ? AppThemeData.grey400
+                                                          : AppThemeData
+                                                              .grey600,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                          ],
+                                        ),
+                                      ),
+                                      if (controller.orderModel.value.status ==
+                                          Constant.orderCompleted)
+                                        RoundedButtonFill(
+                                          title: "Rate Driver".tr,
+                                          height: 4,
+                                          width: 28,
+                                          color: AppThemeData.primary300,
+                                          textColor: AppThemeData.grey50,
+                                          onPress: () {
+                                            Get.to(
+                                                () => const RateDriverScreen(),
+                                                arguments: {
+                                                  'orderModel': controller
+                                                      .orderModel.value,
+                                                  'driverModel': controller
+                                                      .driverUserModel.value,
+                                                });
+                                          },
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 14,
+                                ),
+                              ],
+                            ),
                           Text(
                             "Bill Details".tr,
                             textAlign: TextAlign.start,

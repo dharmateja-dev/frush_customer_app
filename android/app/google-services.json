@@ -23,6 +23,22 @@
           }
         },
         {
+          "client_id": "792020357769-lhl7a7pivij1cum8ksaruml60llelvoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sameats.customer.android",
+            "certificate_hash": "f077ee23c5f28ab6a8ae97ca0893a8e49a4e83dc"
+          }
+        },
+        {
+          "client_id": "792020357769-m5v2nvgkhsluuh8m2ikeou099g577qrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sameats.customer.android",
+            "certificate_hash": "d3af2fa5fad8bd6da555c328b4ef461b311c0322"
+          }
+        },
+        {
           "client_id": "792020357769-o0e60os8c6hcapmrkdf9kapjvdvlpn1n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -54,6 +70,13 @@
             {
               "client_id": "792020357769-1ccggjqhqeotg8u3jqd9kvpab00i0vg3.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "792020357769-c2cu8q8v2fjvnsi1ceqpqmjgp432a4qk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sameats.customer.ios"
+              }
             }
           ]
         }
@@ -99,6 +122,13 @@
             {
               "client_id": "792020357769-1ccggjqhqeotg8u3jqd9kvpab00i0vg3.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "792020357769-c2cu8q8v2fjvnsi1ceqpqmjgp432a4qk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sameats.customer.ios"
+              }
             }
           ]
         }
@@ -144,6 +174,13 @@
             {
               "client_id": "792020357769-1ccggjqhqeotg8u3jqd9kvpab00i0vg3.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "792020357769-c2cu8q8v2fjvnsi1ceqpqmjgp432a4qk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sameats.customer.ios"
+              }
             }
           ]
         }

@@ -232,8 +232,16 @@ class LoginController extends GetxController {
 
   Future<UserCredential?> signInWithGoogle() async {
     try {
+      // Initialize GoogleSignIn with web client ID for proper token exchange
+      // The serverClientId is the Web Client ID from Firebase Console / google-services.json
+      final GoogleSignIn googleSignIn = GoogleSignIn(
+        serverClientId:
+            '792020357769-1ccggjqhqeotg8u3jqd9kvpab00i0vg3.apps.googleusercontent.com',
+        scopes: ['email', 'profile'],
+      );
+
       final GoogleSignInAccount? googleUser =
-          await GoogleSignIn().signIn().catchError((error) {
+          await googleSignIn.signIn().catchError((error) {
         ShowToastDialog.closeLoader();
         ShowToastDialog.showToast("something_went_wrong".tr);
         return null;

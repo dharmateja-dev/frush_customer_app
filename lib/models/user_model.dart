@@ -33,6 +33,8 @@ class UserModel {
   String? subscriptionPlanId;
   Timestamp? subscriptionExpiryDate;
   SubscriptionPlanModel? subscriptionPlan;
+  num? reviewsCount;
+  num? reviewsSum;
 
   UserModel(
       {this.id,
@@ -63,6 +65,8 @@ class UserModel {
       this.provider,
       this.subscriptionPlanId,
       this.subscriptionExpiryDate,
+      this.reviewsCount,
+      this.reviewsSum,
       this.subscriptionPlan});
 
   fullName() {
@@ -84,8 +88,12 @@ class UserModel {
     isActive = json['isActive'];
     isDocumentVerify = json['isDocumentVerify'] ?? false;
     role = json['role'] ?? 'user';
-    location = json['location'] != null ? UserLocation.fromJson(json['location']) : null;
-    userBankDetails = json['userBankDetails'] != null ? UserBankDetails.fromJson(json['userBankDetails']) : null;
+    location = json['location'] != null
+        ? UserLocation.fromJson(json['location'])
+        : null;
+    userBankDetails = json['userBankDetails'] != null
+        ? UserBankDetails.fromJson(json['userBankDetails'])
+        : null;
     if (json['shippingAddress'] != null) {
       shippingAddress = <ShippingAddress>[];
       json['shippingAddress'].forEach((v) {
@@ -104,7 +112,9 @@ class UserModel {
     provider = json['provider'];
     subscriptionPlanId = json['subscriptionPlanId'];
     subscriptionExpiryDate = json['subscriptionExpiryDate'];
-    subscriptionPlan = json['subscription_plan'] != null ? SubscriptionPlanModel.fromJson(json['subscription_plan']) : null;
+    subscriptionPlan = json['subscription_plan'] != null
+        ? SubscriptionPlanModel.fromJson(json['subscription_plan'])
+        : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -131,7 +141,8 @@ class UserModel {
       data['userBankDetails'] = userBankDetails!.toJson();
     }
     if (shippingAddress != null) {
-      data['shippingAddress'] = shippingAddress!.map((v) => v.toJson()).toList();
+      data['shippingAddress'] =
+          shippingAddress!.map((v) => v.toJson()).toList();
     }
     if (role == Constant.userRoleDriver) {
       data['carName'] = carName;
@@ -147,6 +158,8 @@ class UserModel {
       data['subscriptionExpiryDate'] = subscriptionExpiryDate;
       data['subscription_plan'] = subscriptionPlan?.toJson();
     }
+    data['reviewsCount'] = reviewsCount;
+    data['reviewsSum'] = reviewsSum;
     data['appIdentifier'] = appIdentifier;
     data['provider'] = provider;
 
@@ -182,7 +195,14 @@ class ShippingAddress {
   UserLocation? location;
   bool? isDefault;
 
-  ShippingAddress({this.address, this.landmark, this.locality, this.location, this.isDefault, this.addressAs, this.id});
+  ShippingAddress(
+      {this.address,
+      this.landmark,
+      this.locality,
+      this.location,
+      this.isDefault,
+      this.addressAs,
+      this.id});
 
   ShippingAddress.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -191,7 +211,9 @@ class ShippingAddress {
     locality = json['locality'];
     isDefault = json['isDefault'];
     addressAs = json['addressAs'];
-    location = json['location'] == null ? null : UserLocation.fromJson(json['location']);
+    location = json['location'] == null
+        ? null
+        : UserLocation.fromJson(json['location']);
   }
 
   Map<String, dynamic> toJson() {
@@ -266,4 +288,3 @@ class UserBankDetails {
 * Company: Movenetics Digital
 * Author: Aman Bhandari 
 *******************************************************************************************/
-
