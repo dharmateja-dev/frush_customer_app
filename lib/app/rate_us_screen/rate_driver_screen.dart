@@ -10,7 +10,7 @@ import 'package:customer/utils/network_image_widget.dart';
 import 'package:customer/widget/my_separator.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:customer/widget/rating_star_widget.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
@@ -92,18 +92,12 @@ class RateDriverScreen extends StatelessWidget {
                                         fontSize: 18,
                                         fontFamily: AppThemeData.semiBold),
                                   ),
-                                  RatingBar.builder(
+                                  RatingStarWidget(
                                     initialRating: controller.ratings.value,
-                                    minRating: 1,
-                                    direction: Axis.horizontal,
                                     itemCount: 5,
                                     itemSize: 32,
                                     itemPadding: const EdgeInsets.symmetric(
                                         horizontal: 6.0),
-                                    itemBuilder: (context, _) => const Icon(
-                                      Icons.star,
-                                      color: AppThemeData.warning300,
-                                    ),
                                     onRatingUpdate: (double rate) {
                                       controller.ratings.value = rate;
                                     },

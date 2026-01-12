@@ -1436,10 +1436,10 @@ class OrderDetailsScreen extends StatelessWidget {
                                                     0)
                                               Row(
                                                 children: [
-                                                  Icon(Icons.star,
-                                                      size: 16,
-                                                      color: AppThemeData
-                                                          .warning300),
+                                                  SvgPicture.asset(
+                                                      'assets/icons/ic_star.svg',
+                                                      width: 16,
+                                                      height: 16),
                                                   const SizedBox(width: 4),
                                                   Text(
                                                     (controller

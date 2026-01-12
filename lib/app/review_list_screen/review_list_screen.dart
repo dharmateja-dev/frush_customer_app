@@ -11,7 +11,7 @@ import 'package:customer/utils/dark_theme_provider.dart';
 import 'package:customer/utils/fire_store_utils.dart';
 import 'package:customer/utils/network_image_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:customer/widget/rating_star_widget.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
@@ -128,20 +128,12 @@ class ReviewListScreen extends StatelessWidget {
                                   const SizedBox(
                                     height: 5,
                                   ),
-                                  RatingBar.builder(
-                                    ignoreGestures: true,
-                                    initialRating: ratingModel.rating ?? 0.0,
-                                    minRating: 1,
-                                    direction: Axis.horizontal,
+                                  RatingDisplayWidget(
+                                    rating: ratingModel.rating ?? 0.0,
                                     itemCount: 5,
                                     itemSize: 18,
                                     itemPadding: const EdgeInsets.symmetric(
                                         horizontal: 2.0),
-                                    itemBuilder: (context, _) => const Icon(
-                                      Icons.star,
-                                      color: AppThemeData.warning300,
-                                    ),
-                                    onRatingUpdate: (double rate) {},
                                   ),
                                   const SizedBox(
                                     height: 5,
@@ -231,26 +223,15 @@ class ReviewListScreen extends StatelessWidget {
                                                       }
                                                     }
                                                   }),
-                                              RatingBar.builder(
-                                                ignoreGestures: true,
-                                                initialRating: value == null
+                                              RatingDisplayWidget(
+                                                rating: value == null
                                                     ? 0.0
                                                     : value ?? 0.0,
-                                                minRating: 1,
-                                                direction: Axis.horizontal,
                                                 itemCount: 5,
                                                 itemSize: 15,
                                                 itemPadding:
                                                     const EdgeInsets.symmetric(
                                                         horizontal: 2.0),
-                                                itemBuilder: (context, _) =>
-                                                    const Icon(
-                                                  Icons.star,
-                                                  color:
-                                                      AppThemeData.warning300,
-                                                ),
-                                                onRatingUpdate:
-                                                    (double rate) {},
                                               ),
                                             ],
                                           ),
@@ -336,4 +317,3 @@ class ReviewListScreen extends StatelessWidget {
 * Company: Movenetics Digital
 * Author: Aman Bhandari 
 *******************************************************************************************/
-
